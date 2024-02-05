@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<hr lang="es">
+<head>
+  <style>
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 0px;
+      text-align: center;
+      position: absolute;
+      top: 10%;
+      width: 100%;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 0px;
+      text-align: center;
+      position: absolute;
+      bottom: 20%;
+      width: 100%;
+    }
+    .body {
+      padding: 40px;
+      margin: 20%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      grid-auto-rows: minmax(100px, auto);
+    }
+     .columna1 {
+        padding-top: 40px;
+        background-color: #fc0707;
+        grid-column: 1;
+        grid-row: 2 / 5;
+  
+      }
+      .columna-pequena1 {
+        background-color: #2cef0a;
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+      }
+      .columna-pequena2 {
+        background-color: #e0ef0a;
+        grid-column: 1;
+        grid-row: 2 / 5;
+      }
+      .columna-pequena3 {
+        background-color: #ef0adc;
+        grid-column: 3;
+        grid-row: 3;
+      }
+      .columna-pequena4 {
+        background-color: #b60aef;
+        grid-column: 2;
+        grid-row: 4;
+      }
+      .columna-pequena5 {
+        background-color: #53e6d7;
+        grid-column: 3;
+        grid-row: 5;
+        
+      }
+  </style>
+</head>
+
+<header><h1>Encabezado</h1></header>
+
+<body>
+  <div class="columna1">Columna1</div>
+  <div class="body">
+      <div class="columna-pequena1">One</div>
+      <div class="columna-pequena2">Two</div>
+      <div class="columna-pequena3">Three</div>
+      <div class="columna-pequena4">Four</div>
+      <div class="columna-pequena5">Five</div>
+  </div>
+  <footer><h1>Pie de página</h1></footer>
+
+</body>
+
+</html>
